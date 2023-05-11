@@ -183,10 +183,12 @@ input[type="radio"]:checked {
 
 .icon-minus {
     font-size: 1.5rem;
+    cursor: pointer;
 }
 
 .icon-plus {
     font-size: 1.5rem;
+    cursor: pointer;
 }
 
 .card-price {
@@ -196,6 +198,7 @@ input[type="radio"]:checked {
     height: 50px;
     border-top: 1px solid #103743;
     margin-bottom: 30px;
+    margin-top: 30px;
 }
 
 .taxes-price {
@@ -219,6 +222,13 @@ input[type="radio"]:checked {
     font-weight: 500;
     font-size: 1rem;
     margin-bottom: 15px;
+    cursor: pointer;
+    transition: 300ms;
+}
+
+.button-reservation:active {
+    background: #205fdd;
+    transform: scale(0.96);
 }
 
 .text-cgv {
@@ -230,4 +240,12 @@ input[type="radio"]:checked {
 .text-cgv span {
     color: #f2f3f3;
 
+}
+
+
+.test-container {
+    display: flex;
+    justify-content: space-between;
+    color: whitesmoke;
+    font-size: 0.8rem;
 }

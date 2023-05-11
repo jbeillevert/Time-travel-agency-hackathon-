@@ -4,8 +4,12 @@ function AboutUs() {
 
     return (
         <>
-            <div>
-                <h3>BLEURGH</h3>
+            <div className="about-us">
+                <div className="about-us-image">
+                    <img src="src\components\img\imagechine.jpg" alt="The Time Machine" />
+
+
+                </div>
             </div>
         </>
     );

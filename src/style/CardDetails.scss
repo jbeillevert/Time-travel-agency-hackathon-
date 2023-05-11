@@ -28,7 +28,7 @@
     padding-bottom: 50px;
 }
 
-p {
+.description-details {
 
     padding-top: 30px;
     width: 100%;
@@ -38,7 +38,7 @@ p {
 
 }
 
-h1 {
+.title-details {
 
     padding-top: 20px;
     display: flex;
@@ -62,7 +62,7 @@ h1 {
     padding-right: 5%;
     gap: 80px;
 
-    button {
+    .button-details {
         display: flex;
         justify-content: center;
         align-items: center;

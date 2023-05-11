@@ -7,6 +7,8 @@
     background-color: #001E27;
     padding-left: 3%;
     position: relative;
+    animation: fallbar;
+    animation-duration: 0.5s;
     
     
 
@@ -28,9 +30,21 @@
     width: 20%;
     padding-right: 20px;
     padding-top: 15px;
+    animation: slide-in ;
+    animation-duration: 0.4s;
+
+
+    &:hover{
+        right: 0;
+    }
+
+    a {
+        transform: scale(80%)
+    }
 
     & a:hover{
         opacity: 50%;
+        transform: scale(85%)
     }
   }
 
@@ -39,13 +53,36 @@
     display: flex;
     width: 25%;
     position: absolute;
-    right: 0;
     height: 105%;
     border-bottom  : 150px solid #293F46;
-    border-left : 90px solid transparent;  
+    border-left : 90px solid transparent;
+    animation: slide-in ;
+    animation-duration: 0.4s;
+
+    
     }
 }
 
+@keyframes slide-in {
+    from{
+        right: -20%;
+        opacity:0;
+    }
+    to {
+        right:0;
+        opacity:1;
+    }
+}
+
+@keyframes fallbar {
+    from{
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+
+    }
+}
 
 
 

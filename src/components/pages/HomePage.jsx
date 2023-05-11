@@ -25,7 +25,7 @@ function HomePage() {
     const handleSelector = (e) => {
         setSearch(e.target.value)
     }
-    console.log("pouet !")
+    
 
     return (
         <main className="home-page">
@@ -35,13 +35,13 @@ function HomePage() {
                 <option className="option" value="">...</option>
                 {table.map((el) => {
                     return (
-                        <option key={el.id} value={el.id}>{el.titre}</option>
+                        <option key={el.id} value={el.lieu}>{el.lieu}</option>
                     )
                 })}
             </select>
             <ul className="home-page_ul">
                 {table
-                    .filter((el) => search === "" || el.titre === search)
+                    .filter((el) => search === "" || el.lieu === search)
                     .map((el) => {
                         return (
                             <SingleCard key={el.id} image={el.image} titre={el.titre} tarif={el.tarif} id={el.id} />

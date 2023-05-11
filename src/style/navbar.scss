@@ -1,0 +1,53 @@
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 120px;
+    width: 100%;
+    background-color: #001E27;
+    padding-left: 3%;
+    position: relative;
+    
+    
+
+    .nav-title{
+        color:rgb(240, 238, 218);
+        font-family: 'Inter', sans-serif;
+        font-weight: 900;
+        font-size: 1.2rem;
+    }
+
+
+  .social {
+
+    z-index: 2;
+    display: flex;
+    justify-content: space-around;
+    position:absolute;
+    right: 0;
+    width: 20%;
+    padding-right: 20px;
+    padding-top: 15px;
+
+    & a:hover{
+        opacity: 50%;
+    }
+  }
+
+  .parallelogramme { 
+    right: 0;
+    display: flex;
+    width: 25%;
+    position: absolute;
+    right: 0;
+    height: 105%;
+    border-bottom  : 150px solid #293F46;
+    border-left : 90px solid transparent;  
+    }
+}
+
+
+
+
+ 
+

@@ -25,11 +25,11 @@ function HomePage() {
     const handleSelector = (e) => {
         setSearch(e.target.value)
     }
-    
+
 
     return (
         <main className="home-page">
-            <NavBar />
+            {/* <NavBar /> */}
             <Hero />
             <select className="home-page_select" value={search} onChange={handleSelector}>
                 <option className="option" value="">...</option>

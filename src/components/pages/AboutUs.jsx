@@ -4,9 +4,9 @@ function AboutUs() {
 
     return (
         <>
-            <div className="about-us">
-                <div className="about-us-image">
-                    <img src="src\components\img\imagechine.jpg" alt="The Time Machine" />
+            <div className="about-container">
+                <div className="about-image">
+                    <img src="src\assets\img\rick.jpg" alt="The Time Machine" />
 
 
                 </div>

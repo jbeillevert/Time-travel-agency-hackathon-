@@ -12,12 +12,12 @@ function Hero() {
                     </h1>
                 </div>
 
-                <div className="about-us">
-                    <h1 className="about-us_text">
-                        <NavLink to="/time-machine" className="link-about-us">Découvrez la technologie de pointe qui rend possible votre voyage.</NavLink>
-                    </h1>
+                <NavLink to="/time-machine" className="about-us">
+
+                    <div className="link-about-us">Découvrez la technologie de pointe qui rend possible votre voyage.</div>
+
+                    </NavLink>
                 </div>
-            </div >
         </>
     );
 }

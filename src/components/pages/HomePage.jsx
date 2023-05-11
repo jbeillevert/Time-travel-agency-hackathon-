@@ -34,14 +34,16 @@ function HomePage() {
             <NavBar />
 
             <Hero />
-            <select className="home-page_select" value={search} onChange={handleSelector}>
-                <option className="option" value="">...</option>
+            <div className="select-container">
+            <select className="page_select" value={search} onChange={handleSelector}>
+                <option className="option" value="">Sélectionnez votre époque</option>
                 {table.map((el) => {
                     return (
                         <option key={el.id} value={el.lieu}>{el.lieu}</option>
                     )
                 })}
             </select>
+            </div>
             <ul className="home-page_ul">
                 {table
                     .filter((el) => search === "" || el.lieu === search)

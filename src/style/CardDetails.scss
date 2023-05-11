@@ -1,0 +1,98 @@
+.container {
+
+    max-width: 1440px;
+}
+
+.ImageCardDetails {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #002C39;
+    width: 100%;
+    height: auto;
+
+    img {
+        width: 100%;
+    }
+}
+
+.DescriptionCardDetails {
+
+    background-color: #002C39;
+    min-height: 100%;
+    width: 100vw;
+    max-width: 1440px;
+    color: white;
+    font-size: 20px;
+    padding-bottom: 50px;
+}
+
+.description-details {
+
+    padding-top: 30px;
+    width: 100%;
+    text-align: start;
+    padding-left: 10%;
+    padding-right: 10%;
+
+}
+
+.title-details {
+
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    text-decoration: underline;
+}
+
+
+.ButtonReservation {
+
+    background-color: #002C39;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 30px;
+    border: none;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    padding-left: 5%;
+    padding-right: 5%;
+    gap: 80px;
+
+    .button-details {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        color: #002C39;
+        border: none;
+        padding: 10px 20px;
+        font-size: 14px;
+        width: 200px;
+        border-radius: 20px;
+        cursor: pointer;
+
+    }
+
+
+    .PriceCard {
+
+        color: white;
+        font-size: 20px;
+
+    }
+
+    // h3 {
+    //     display: flex;
+    //     justify-content: end;
+    //     justify-self: end;
+    //     text-align: end;
+    //     color: white;
+    //     font-size: 25px;
+    //     padding-left: 200px;
+
+    // }
+}

@@ -1,0 +1,65 @@
+
+.cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: #E6E7DD;
+    max-height: 350px;
+    max-width: 250px;
+    font-family: 'Inter', sans-serif;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+
+    .card-info-container{
+        display:flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 10px;
+        height: 40%;
+    }
+
+.card-title{
+    display:flex;
+    margin: 5px;
+    font-size: 1rem;
+    color: #002C39;
+}
+
+    .card-img-container{
+       display:flex;
+       
+        height: 60%;
+        overflow: hidden;
+
+        img{
+        
+            height: 100%;
+        }
+
+        
+    }
+    .achat{
+        display:flex;
+        justify-content: space-between;
+        padding: 8px;
+
+        .single-card-infos{
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+
+            .apartirde {
+                font-size: 0.8rem;
+                color: gray;
+            }
+
+            .tarif{
+                font-weight: 600;
+                color: #002C39;
+            }
+        }
+
+    }
+    
+}

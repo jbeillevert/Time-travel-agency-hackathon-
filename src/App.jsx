@@ -1,12 +1,10 @@
-import ReservationForm from "./components/pages/ReservationForm"
+
+import Router from "./components/router/Router";
 
 function App() {
   return (
-    <div className="app">
-      <ReservationForm />
-
-    </div>
-  )
+    <Router />
+  );
 }
 
-export default App
+export default App;

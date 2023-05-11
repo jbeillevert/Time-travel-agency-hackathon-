@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { createClient } from "@supabase/supabase-js";
 import SingleCard from '../SingleCard';
+import NavBar from '../NavBar';
+import Hero from '../Hero';
 
 function HomePage() {
 
@@ -26,6 +28,8 @@ function HomePage() {
 
     return (
         <main className="home-page">
+            <NavBar />
+            <Hero />
             <select className="home-page_select" value={search} onChange={handleSelector}>
                 <option className="option" value="">...</option>
                 {table.map((el) => {

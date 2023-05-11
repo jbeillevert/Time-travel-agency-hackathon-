@@ -1,10 +1,8 @@
 @import "./global";
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Kalam&display=swap");
 
 .hero {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-around;
   align-items: center;
   background-color: var(--color-bg);
   height: 250px;
@@ -13,8 +11,6 @@
   text-shadow: 3px 5px 2px #5e4d4d;
 
   .hero_title {
-    justify-content: center;
-    text-align: center;
     font-family: "Inter", sans-serif;
     font-size: 4rem;
     color: whitesmoke;
@@ -24,5 +20,19 @@
     font-family: "Kalam", cursive;
     font-size: 4rem;
     color: red;
+  }
+}
+
+.about-us {
+  background-color: var(--color-bg);
+  height: 250px;
+  width: 100%;
+  padding: 10px;
+  text-shadow: 3px 5px 2px #5e4d4d;
+
+  .about-us_text {
+    font-family: "Inter", sans-serif;
+    font-size: 4rem;
+    color: whitesmoke;
   }
 }

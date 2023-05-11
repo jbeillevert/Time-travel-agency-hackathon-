@@ -9,7 +9,7 @@
     position: relative;
     animation: fallbar;
     animation-duration: 0.5s;
-    
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;    
     
 
     .nav-title{
@@ -43,7 +43,7 @@
     }
 
     & a:hover{
-        opacity: 50%;
+        opacity: 80%;
         transform: scale(85%)
     }
   }
@@ -58,6 +58,7 @@
     border-left : 90px solid transparent;
     animation: slide-in ;
     animation-duration: 0.4s;
+    
 
     
     }

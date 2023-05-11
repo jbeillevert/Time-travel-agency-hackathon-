@@ -1,9 +1,8 @@
-import Hero from "./components/Hero";
-
+import Router from "./components/router/Router"
 function App() {
   return (
     <div className="app">
-      <Hero />
+     <Router />
     </div>
   )
 }

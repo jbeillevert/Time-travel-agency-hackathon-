@@ -1,12 +1,8 @@
-
 import Router from "./components/router/Router"
-
-
 function App() {
   return (
     <div className="app">
-      <Router />
-
+     <Router />
     </div>
   )
 }

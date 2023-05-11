@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { createClient } from "@supabase/supabase-js";
 import SingleCard from '../SingleCard';
+import Hero from '../hero';
+import NavBar from '../NavBar'
 
 function HomePage() {
 
@@ -8,6 +10,7 @@ function HomePage() {
     const [search, setSearch] = useState("")
 
     const [table, setTable] = useState([]);
+
     const supabase = createClient("https://umnptqfditgysgbpzoyx.supabase.co", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InVtbnB0cWZkaXRneXNnYnB6b3l4Iiwicm9sZSI6ImFub24iLCJpYXQiOjE2ODM4MTA2MjUsImV4cCI6MTk5OTM4NjYyNX0.LExHLdYK2bAdq0ronsaNNl9VDAeMwhTw0SVzB735W5o");
 
     useEffect(() => {
@@ -22,10 +25,12 @@ function HomePage() {
     const handleSelector = (e) => {
         setSearch(e.target.value)
     }
-    
+
 
     return (
         <main className="home-page">
+            {/* <NavBar /> */}
+            <Hero />
             <select className="home-page_select" value={search} onChange={handleSelector}>
                 <option className="option" value="">...</option>
                 {table.map((el) => {

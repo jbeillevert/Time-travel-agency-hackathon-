@@ -7,9 +7,12 @@
 
 .content-container-rf {
     height: fit-content;
+    width: fit-content;
     max-width: 1200px;
-    padding-top: 150px;
+    padding-top: 100px;
     margin: auto;
+    display: flex;
+    gap: 30px;
 }
 
 .left-part-reservation-form {
@@ -82,7 +85,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 5px;
+    gap: 10px;
     color: #F1F1F1;
     font-size: 15px;
     font-weight: 300;
@@ -90,5 +93,141 @@
   
 input[type="radio"]:checked {
     background-color: #bbbbbb;
-  }
+}
+
+.right-part-reservation-form {
+    width: 350px;
+    height: fit-content;
+}
+
+.card-command {
+    display: grid;
+    height: 70px;
+    grid-template-columns: 30% 70%;
+    border-radius: 10px;
+    border: 1px solid #103743;
+    margin-bottom: 20px;
+}
   
+.img-command {
+    max-width: 100%;
+    height: 100%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.container-text-command {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding-left: 10px;
+}
+
+.title-command {
+    color: #D2D6D7;
+    letter-spacing: -0.5pt;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: -5%;
+}
+
+.text-command {
+    color: #F1F1F1;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.block-voyageurs {
+    color: #D2D6D7;
+    letter-spacing: -0.4pt;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: -5%;
+    margin-bottom: 10px;
+}
+
+.container-voyageurs {
+    border: 1px solid #103743;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 100px;
+}
+
+.card-voyageur {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.type-voyageur {
+    color: #D2D6D7;
+    font-weight: 500;
+
+}
+
+.text-voyageur {
+    color: #D2D6D7;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.counter-voyageur {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: #dfdfdf;
+}
+
+.icon-minus {
+    font-size: 1.5rem;
+}
+
+.icon-plus {
+    font-size: 1.5rem;
+}
+
+.card-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    border-top: 1px solid #103743;
+    margin-bottom: 30px;
+}
+
+.taxes-price {
+    color: #8C9497;
+    font-size: 13px;
+}
+
+.total-price {
+    color: #f2f3f3;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.button-reservation {
+    background: #0442BB;
+    border: none;
+    box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    height: 55px;
+    color: #f2f3f3;
+    font-weight: 500;
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.text-cgv {
+    color: #8C9497;
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+.text-cgv span {
+    color: #f2f3f3;
+
+}

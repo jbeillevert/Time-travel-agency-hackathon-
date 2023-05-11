@@ -16,6 +16,7 @@ useEffect(() => {
    const handleSelector = (e) => {
     setSearch(e.target.value)
 }
+console.log("pouet !")
 
     return (
         <main className="home-page">

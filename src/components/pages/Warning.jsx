@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { AiOutlineWarning } from "react-icons/ai";
+import { RiErrorWarningLine } from "react-icons/ri";
 
 function Warning() {
     const [showPopup, setShowPopup] = useState(false);
@@ -12,22 +14,23 @@ function Warning() {
     };
     return (
         <> <div className="warning">
-            <h1 className="warning-title">Avertissement sur le voyage temporel</h1>
+            <h1 className="warning-title"> <AiOutlineWarning id="icon" />  Avertissement sur le voyage temporel  <AiOutlineWarning id="icon" /></h1>
 
             <div className="disclaimer">
-                <p>AVERTISSEMENT : Le voyage temporel est une activité extrêmement dangereuse et imprévisible.</p>
+
+                <p>  AVERTISSEMENT : Le voyage temporel est une activité extrêmement dangereuse et imprévisible.</p>
                 <p>L'entreprise XYZ décline toute responsabilité quant aux conséquences du voyage temporel, y compris, mais sans s'y limiter :</p>
                 <ul className="warning-list">
-                    <li>Perte de données</li>
-                    <li>Domages matériels</li>
-                    <li>Boucles temporelles</li>
-                    <li>Modification de l'histoire</li>
-                    <li>Rencontres avec des versions antérieures ou futures de soi-même</li>
+                    <li> <RiErrorWarningLine /> Perte de données</li>
+                    <li> <RiErrorWarningLine /> Dommages matériels</li>
+                    <li> <RiErrorWarningLine /> Boucles temporelles</li>
+                    <li> <RiErrorWarningLine /> Altération de l'histoire</li>
+                    <li> <RiErrorWarningLine /> Rencontres avec des versions antérieures ou futures de soi-même</li>
                 </ul>
                 <p>En poursuivant le voyage temporel, vous reconnaissez que vous le faites entièrement à vos propres risques.</p>
             </div>
 
-            <div className="disclaimer">
+            <div className="disclaimer2">
                 <h2 className="warning-instructions">Instructions de sécurité</h2>
                 <p>Avant de procéder au voyage temporel, veuillez prendre en compte les éléments suivants :</p>
                 <ol>

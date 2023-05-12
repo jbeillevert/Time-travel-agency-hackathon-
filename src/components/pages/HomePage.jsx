@@ -36,7 +36,7 @@ function HomePage() {
             <Hero />
             <div className="select-container">
             <select className="page_select" value={search} onChange={handleSelector}>
-                <option className="option" value="">Sélectionnez votre époque</option>
+                <option className="option" value="">Sélectionnez votre voyage</option>
                 {table.map((el) => {
                     return (
                         <option key={el.id} value={el.lieu}>{el.lieu}</option>

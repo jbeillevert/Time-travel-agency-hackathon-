@@ -6,7 +6,7 @@ const NavBar = () => {
         <>
             <nav className='nav'>
                 <div className='nav-title'>
-                    <h2>TIME TRAVEL AGENCY</h2>
+                    <h2 className='nav-agency-title'>TIME TRAVEL AGENCY</h2>
                 </div>
                 <div className="social">
                         <a href="https://fr-fr.facebook.com/">

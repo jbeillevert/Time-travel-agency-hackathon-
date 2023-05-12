@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { NavLink } from 'react-router-dom';
 import { AiOutlineWarning } from "react-icons/ai";
 import { RiErrorWarningLine } from "react-icons/ri";
 
@@ -42,9 +43,11 @@ function Warning() {
                 </ol>
             </div >
             <div className="button">
+                {/* <NavLink to=""> */}
                 <button onClick={handleClick}>J'accepte les conditions</button>
+                {/* </NavLink> */}
 
-                {showPopup && (
+                {/* {showPopup && (
                     <div className="popup">
                         <div className="popup-content">
                             <h2>Confirmation</h2>
@@ -52,7 +55,7 @@ function Warning() {
                             <button onClick={popupClose}>Fermer</button>
                         </div>
                     </div>
-                )}
+                )} */}
             </div>
         </div>
         </>

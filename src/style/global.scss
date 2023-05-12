@@ -2,10 +2,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Kalam&display=swap");
 
+#root {
+
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
+  #root {
+    height: 100%;
+  }
 
   body {
     background: rgb(2, 95, 122);
@@ -14,6 +22,7 @@
       rgba(2, 95, 122, 1) 0%,
       rgba(0, 44, 57, 1) 75%
     );
+    height: 100vh;
   }
 }
 

@@ -14,7 +14,7 @@ function Hero() {
 
                 <NavLink to="/time-machine" className="about-us">
 
-                    <div className="link-about-us">Découvrez la technologie de pointe qui rend possible votre voyage.</div>
+                    <div className="link-about-us">Comment ça marche?</div>
 
                     </NavLink>
                 </div>

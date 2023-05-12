@@ -4,7 +4,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  // background-color: var(--color-bg);
   width: 100%;
   height: 250px;
   padding: 50px;
@@ -20,12 +19,7 @@
     display: flex;
     align-items: center;
     background-color: #6396a5;
-    width: 30%;
     height: auto;
-    max-width: 300px;
-    min-width: 150px;
-    min-height: 100px;
-    padding: 15px;
     border-radius: 15px;
     transition: all 0.2s;
     &:hover {
@@ -50,9 +44,15 @@
     text-transform: uppercase;
   }
   .link-about-us {
+    display: flex;
+    justify-content: center;
     font-family: "Inter", sans-serif;
-    font-size: 0.8rem;
+    font-size: 1rem;
+    padding: 20px 30px;
+    font-weight: 800;
     color: whitesmoke;
     text-transform: uppercase;
+    width: 100%;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
   }
 }

@@ -1,6 +1,27 @@
+
+
+
 .container {
 
-    max-width: 1440px;
+    width: 100%;
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    flex-direction: column;
+
+    .iconCross{
+        position: absolute;
+        color: white;
+        right: 3%;
+        top: 4%;
+        scale: 170%;
+        cursor: pointer;
+        transition: all 0.3s;
+            &:hover{
+                scale: 180%;
+                transform: rotate(90deg);
+            }
+    }
+
 }
 
 .ImageCardDetails {
@@ -10,7 +31,9 @@
     align-items: center;
     background-color: #002C39;
     width: 100%;
-    height: auto;
+    height: 40%;
+    max-height: 450px;
+    overflow:hidden;
 
     img {
         width: 100%;
@@ -19,13 +42,15 @@
 
 .DescriptionCardDetails {
 
-    background-color: #002C39;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     min-height: 100%;
-    width: 100vw;
-    max-width: 1440px;
+    width: 100%;
     color: white;
     font-size: 20px;
-    padding-bottom: 50px;
+    padding: 30px;
 }
 
 .description-details {
@@ -35,25 +60,24 @@
     text-align: start;
     padding-left: 10%;
     padding-right: 10%;
+    font-weight: 300;
 
 }
 
 .title-details {
 
     padding-top: 20px;
+    font-size: 2rem;;
     display: flex;
     justify-content: center;
-    text-decoration: underline;
 }
 
 
 .ButtonReservation {
 
-    background-color: #002C39;
     display: flex;
     justify-content: center;
     align-items: center;
-    cursor: pointer;
     font-size: 30px;
     border: none;
     padding-bottom: 30px;
@@ -61,6 +85,11 @@
     padding-left: 5%;
     padding-right: 5%;
     gap: 80px;
+
+    .iconClock{
+        color: white;
+        transform: translate(60px);
+    }
 
     .button-details {
         display: flex;
@@ -72,27 +101,31 @@
         padding: 10px 20px;
         font-size: 14px;
         width: 200px;
-        border-radius: 20px;
+        border-radius: 10px;
         cursor: pointer;
+        transition: 0.2s;
+
+        &:hover{
+            background: #001E27;
+            color: white;
+
+        }
 
     }
 
 
+   
+
+}
+
+    .iconMoney{
+        color: white;
+        transform: translate(-60px);
+    }
     .PriceCard {
 
         color: white;
-        font-size: 20px;
+        font-size: 1.2rem;
 
     }
 
-    // h3 {
-    //     display: flex;
-    //     justify-content: end;
-    //     justify-self: end;
-    //     text-align: end;
-    //     color: white;
-    //     font-size: 25px;
-    //     padding-left: 200px;
-
-    // }
-}

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useParams } from "react-router";
 import { createClient } from "@supabase/supabase-js";
 import ImageDetails from "../img/imagechine.jpg";
+import { NavLink } from "react-router-dom";
 
 function CardDetails() {
 
@@ -36,7 +37,7 @@ function CardDetails() {
     </div>
     <div className="ButtonReservation">
       <h3 className="PriceCard">{table[0].lieu} : {table[0].siecle}</h3>
-      <button className="button-details">Reserver</button>
+      <NavLink to={`/destination/${id}/ReservationForm`}><button className="button-details">Reserver</button></NavLink>
       <h3 className="PriceCard">{table[0].tarif}</h3>
     </div>
     </>)}

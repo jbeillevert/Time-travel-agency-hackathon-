@@ -187,11 +187,11 @@ const ReservationForm = () => {
                                 </div>
 
                                 <div className="test-container">
-                                    <h3 className='text-cgv'>Nombre de voyageurs</h3>
+                                    <h3 className='taxes-price'>Nombre de voyageurs</h3>
                                     <h3 className='test-h3'>{nbVoyageursTotal}</h3>
                                 </div>
                                 <div className="test-container">
-                                    <h3 className='text-cgv'>Prix de base</h3>
+                                    <h3 className='taxes-price'>Prix de base</h3>
                                     <h3 className='test-h3'>{initialPrice} €</h3>
                                 </div>
 

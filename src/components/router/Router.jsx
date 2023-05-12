@@ -4,7 +4,8 @@ import HomePage from '../pages/HomePage';
 import CardDetails from '../pages/CardDetails';
 import AboutUs from '../pages/AboutUs';
 import Warning from '../pages/Warning';
-// import ReservationForm from '../pages/ReservationForm';
+import ReservationForm from '../pages/ReservationForm';
+
 
 const Router = () => {
     return (
@@ -13,7 +14,8 @@ const Router = () => {
             <Route path="/time-machine" element={<AboutUs />} />
             <Route path="/destination/:id" element={<CardDetails />} />
             <Route path="/warning" element={<Warning />} />
-            {/* <Route path="/destination/:id/ReservationForm" element={<ReservationForm />} /> */}
+            <Route path="/destination/:id/ReservationForm" element={<ReservationForm />} />
+
         </Routes>
     );
 };

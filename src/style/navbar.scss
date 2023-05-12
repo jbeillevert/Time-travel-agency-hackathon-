@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap%22);");
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 120px;
+    width: 100%;
+    background-color: #001E27;
+    padding-left: 3%;
+    position: relative;
+    animation: fallbar;
+    animation-duration: 0.5s;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;    
+    
+
+    .nav-title{
+        color:rgb(240, 238, 218);
+        font-family: 'Inter', sans-serif;
+        font-weight: 900;
+        font-size: 1.2rem;
+    }
+
+    .nav-agency-title{
+        font-family: 'Zen Dots', cursive;
+    }
+
+
+  .social {
+
+    z-index: 2;
+    display: flex;
+    justify-content: space-around;
+    position:absolute;
+    right: 0;
+    width: 20%;
+    padding-right: 20px;
+    padding-top: 15px;
+    animation: slide-in ;
+    animation-duration: 0.4s;
+
+
+    &:hover{
+        right: 0;
+    }
+
+    a {
+        transform: scale(80%);
+        transition: 0.2s;
+    }
+
+    & a:hover{
+        opacity: 80%;
+        transform: scale(85%)
+    }
+  }
+
+  .parallelogramme { 
+    right: 0;
+    display: flex;
+    width: 28%;
+    position: absolute;
+    height: 105%;
+    border-bottom  : 150px solid #293F46;
+    border-left : 90px solid transparent;
+    animation: slide-in ;
+    animation-duration: 0.4s;
+    
+    
+
+    
+    }
+}
+
+@keyframes slide-in {
+    from{
+        right: -20%;
+        opacity:0;
+    }
+    to {
+        right:0;
+        opacity:1;
+    }
+}
+
+@keyframes fallbar {
+    from{
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+
+    }
+}
+
+
+
+ 
+

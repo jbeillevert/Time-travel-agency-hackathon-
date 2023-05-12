@@ -1,0 +1,275 @@
+.reservation-form {
+  background-color: #010e13;
+  width: 100vw;
+  overflow-x: hidden;
+  min-height: 100vh;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.iconCross{
+  position: absolute;
+  color: white;
+  right: 3%;
+  top: 4%;
+  scale: 170%;
+  cursor: pointer;
+  transition: all 0.3s;
+      &:hover{
+          scale: 180%;
+          transform: rotate(-90deg);
+      }
+}
+
+.content-container-rf {
+  height: fit-content;
+  width: fit-content;
+  max-width: 1200px;
+  padding-top: 100px;
+  margin: auto;
+  display: flex;
+  gap: 30px;
+}
+
+.left-part-reservation-form {
+  max-width: 550px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.block-container-rf {
+  background-color: #051c23;
+  border: solid 1px #103743;
+  border-radius: 17px;
+  box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.h2-rf {
+  color: #d2d6d7;
+  letter-spacing: -0.8pt;
+  font-weight: 600;
+  font-size: 23px;
+  margin-bottom: 20px;
+}
+
+.label-rf {
+  display: block;
+  color: #f1f1f1;
+  font-size: 15px;
+  font-weight: 300;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.input-rf {
+  width: 100%;
+  height: 50px;
+  border-radius: 10px;
+  border: solid 1px #103743;
+  background-color: #010e13;
+  color: #bbbbbb;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 1.1rem;
+  padding: 0px 20px;
+}
+
+.input-rf:focus {
+  outline: none;
+  border: solid 2px #1a5061;
+}
+
+.dates-proposal-rf {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.text-dates-proposal {
+  /* Masque l'input radio par défaut */
+  color: #bbbbbb;
+}
+
+.custom-radio {
+  padding: 20px 25px;
+  border: 1px solid #103743;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  color: #f1f1f1;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+input[type="radio"]:checked {
+  background-color: #bbbbbb;
+}
+
+.right-part-reservation-form {
+  width: 350px;
+  height: fit-content;
+}
+
+.card-command {
+  display: grid;
+  height: 70px;
+  grid-template-columns: 30% 70%;
+  border-radius: 10px;
+  border: 1px solid #103743;
+  margin-bottom: 20px;
+}
+
+.img-command {
+  max-width: 100%;
+  height: 100%;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.container-text-command {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  padding-left: 10px;
+}
+
+.img-command {
+  max-height: 100%;
+}
+
+.title-command {
+  color: #d2d6d7;
+  font-weight: 500;
+  letter-spacing: -0.5pt;
+  font-size: 16px;
+  max-width: 100%;
+  line-height: -5%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.text-command {
+  color: #d2d6d7;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.block-voyageurs {
+  color: #d2d6d7;
+  letter-spacing: -0.4pt;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: -5%;
+  margin-bottom: 10px;
+}
+
+.container-voyageurs {
+  border: 1px solid #103743;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.card-voyageur {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.type-voyageur {
+  color: #d2d6d7;
+  font-weight: 500;
+}
+
+.text-voyageur {
+  color: #d2d6d7;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.counter-voyageur {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: #dfdfdf;
+  outline: none;
+}
+
+.counter-text {
+  outline: none;
+}
+
+.icon-minus {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.icon-plus {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.card-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  border-top: 1px solid #103743;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.taxes-price {
+  color: #8c9497;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.total-price {
+  color: #f2f3f3;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.button-reservation {
+  background: #446d7a;
+  border: none;
+  box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  height: 55px;
+  width: 100%;
+  color: #f2f3f3;
+  font-weight: 500;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 300ms;
+}
+
+.button-reservation:hover {
+  background: #6396a5;
+  transform: scale(0.96);
+}
+
+.test-container {
+  display: flex;
+  justify-content: space-between;
+  color: whitesmoke;
+  font-size: 0.8rem;
+}
+
+NavLink {
+  width: 100%;
+}

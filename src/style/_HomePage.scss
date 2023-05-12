@@ -1,0 +1,36 @@
+.home-page{
+     display:flex;
+    flex-direction: column;
+
+    .select-container{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding-bottom: 40px;
+    }
+
+    .page_select {
+        height: 60px;
+        max-width: 75%;
+        min-width: 60%;
+        border-radius: 10px;
+        box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.432);
+        padding: 10px;
+        color:grey;
+        &:hover{
+            color:rgb(63, 63, 63);
+            cursor: pointer;
+        }
+
+}
+
+    .home-page_ul{
+        width: 100%;
+        display:flex;
+        justify-content: space-around;
+        padding: 20px;
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+
+}

@@ -5,6 +5,7 @@ import CardDetails from '../pages/CardDetails';
 import AboutUs from '../pages/AboutUs';
 import Warning from '../pages/Warning';
 import ReservationForm from '../pages/ReservationForm';
+import Confirmation from '../Confirmation';
 
 
 const Router = () => {
@@ -15,7 +16,7 @@ const Router = () => {
             <Route path="/destination/:id" element={<CardDetails />} />
             <Route path="/warning" element={<Warning />} />
             <Route path="/destination/:id/ReservationForm" element={<ReservationForm />} />
-
+            <Route path="/confirmation" element={<Confirmation />} />
         </Routes>
     );
 };

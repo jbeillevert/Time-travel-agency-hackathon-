@@ -1,0 +1,45 @@
+.conf-container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-family: 'Inter', sans-serif;
+
+
+.confirmation{
+    width: 30vw;
+    height: auto;
+    background-color: #051c23;
+    border: solid 1px #103743;
+    border-radius: 17px;
+    box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.5);
+    padding: 40px;
+    color: #d2d6d7;
+    font-size: 2rem;
+    font-weight: 600;
+    overflow: hidden;
+    position: relative;
+
+
+    .conf-text{
+        font-weight: 400;
+    }
+}
+
+.iconCross{
+    position: absolute;
+    color: white;
+    right: 3%;
+    top: 4%;
+    scale: 170%;
+    cursor: pointer;
+    transition: all 0.3s;
+        &:hover{
+            scale: 180%;
+            transform: rotate(-90deg);
+        }
+  }
+}

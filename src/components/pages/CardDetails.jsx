@@ -1,8 +1,11 @@
 import React, { useState, useEffect } from "react";
-import { useParams } from "react-router";
+import { useParams, useNavigate } from "react-router";
 import { createClient } from "@supabase/supabase-js";
-import ImageDetails from "../img/imagechine.jpg";
 import { NavLink } from "react-router-dom";
+import { RiMoneyEuroCircleFill } from "react-icons/ri";
+import { MdAccessTimeFilled } from "react-icons/md";
+import { ImCross } from "react-icons/im";
+
 
 function CardDetails() {
 
@@ -22,9 +25,12 @@ function CardDetails() {
       console.log(data)
   }
 
+  const navigate = useNavigate();
+
 
   return (
     <div className="container">
+            <ImCross className="iconCross" onClick={() => navigate(-1)}/>
     {table.length > 0 && ( <>
       <div className="ImageCardDetails" key={id}>
         <img src={table[0].image} alt={`photo ${table[0].lieu}`} />
@@ -36,9 +42,11 @@ function CardDetails() {
       </p>
     </div>
     <div className="ButtonReservation">
-      <h3 className="PriceCard">{table[0].lieu} : {table[0].siecle}</h3>
+    <MdAccessTimeFilled  className="iconClock"/>
+          <h4 className="PriceCard">{table[0].lieu} : {table[0].siecle}</h4>
       <NavLink to={`/destination/${id}/ReservationForm`}><button className="button-details">Reserver</button></NavLink>
-      <h3 className="PriceCard">{table[0].tarif}</h3>
+      <h4 className="PriceCard">{table[0].tarif}</h4>
+          <RiMoneyEuroCircleFill className="iconMoney"/>
     </div>
     </>)}
   </div> 

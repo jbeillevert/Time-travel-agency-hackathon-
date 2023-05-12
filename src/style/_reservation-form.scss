@@ -7,6 +7,20 @@
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
+.iconCross{
+  position: absolute;
+  color: white;
+  right: 3%;
+  top: 4%;
+  scale: 170%;
+  cursor: pointer;
+  transition: all 0.3s;
+      &:hover{
+          scale: 180%;
+          transform: rotate(90deg);
+      }
+}
+
 .content-container-rf {
   height: fit-content;
   width: fit-content;

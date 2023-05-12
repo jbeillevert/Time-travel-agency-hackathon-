@@ -9,14 +9,15 @@ import { AiOutlinePlusCircle } from "react-icons/ai";
 
 
 const ReservationForm = () => {
-    const [initialPrice, setInitialPrice] = useState(72500)
     const [totalPrice, setTotalPrice] = useState(72500)
     const [nbAdultes, setNbAdultes] = useState(1)
     const [nbEnfants, setNbEnfants] = useState(0)
     const [nbBebes, setNbBebes] = useState(0)
     const [nbAnimaux, setNbAnimaux] = useState(0)
     const [nbVoyageursTotal, setNbVoyageursTotal] = useState(1)
+    
 
+    const [initialPrice, setInitialPrice] = useState(72500)
     const [imgCommand, setImgCommand] = useState('')
     const [titleCommand, setTitleCommand] = useState('')
     const [textCommand, setTextCommand] = useState('')
@@ -100,15 +101,15 @@ const ReservationForm = () => {
                             <div className="dates-container">
                                 <div className="dates-proposal-rf">
                                     <label className="custom-radio">
-                                        <input type="radio" className="text-dates-proposal" name="date1" />
+                                        <input type="radio" className="text-dates-proposal" name="date" />
                                         <HiOutlineCalendar className="icon-calendar" /> 25 Mai 2023
                                     </label>
                                     <label className="custom-radio">
-                                        <input type="radio" className="text-dates-proposal" name="date2" />
+                                        <input type="radio" className="text-dates-proposal" name="date" />
                                         <HiOutlineCalendar className="icon-calendar" /> 1 Juin 2023
                                     </label>
                                     <label className="custom-radio">
-                                        <input type="radio" className="text-dates-proposal" name="date3" />
+                                        <input type="radio" className="text-dates-proposal" name="date" />
                                         <HiOutlineCalendar className="icon-calendar" /> 10 Juin 2023
                                     </label>
                                 </div>
@@ -186,7 +187,6 @@ const ReservationForm = () => {
                                 <div className="total-price">{totalPrice} €</div>
                             </div>
                             <button type="submit" className='button-reservation'>Réserver</button>
-                            <p className='text-cgv'>Voir nos <span>conditions générales de vente</span></p>
                         </div>
                     </div>
 

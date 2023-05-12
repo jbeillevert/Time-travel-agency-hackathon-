@@ -2,14 +2,13 @@ import React, { useEffect, useState } from 'react';
 import { HiOutlineCalendar } from "react-icons/hi";
 import { AiOutlineMinusCircle } from "react-icons/ai";
 import { AiOutlinePlusCircle } from "react-icons/ai";
-
-
-
-
+import { createClient } from '@supabase/supabase-js';
+import { useParams } from 'react-router-dom';
 
 
 const ReservationForm = () => {
-    const [totalPrice, setTotalPrice] = useState(72500)
+    const [initialPrice, setInitialPrice] = useState(0)
+    const [totalPrice, setTotalPrice] = useState(initialPrice)
     const [nbAdultes, setNbAdultes] = useState(1)
     const [nbEnfants, setNbEnfants] = useState(0)
     const [nbBebes, setNbBebes] = useState(0)
@@ -17,11 +16,23 @@ const ReservationForm = () => {
     const [nbVoyageursTotal, setNbVoyageursTotal] = useState(1)
     
 
-    const [initialPrice, setInitialPrice] = useState(72500)
-    const [imgCommand, setImgCommand] = useState('')
-    const [titleCommand, setTitleCommand] = useState('')
-    const [textCommand, setTextCommand] = useState('')
 
+    const [table, setTable] = useState([]);
+
+    const { id } = useParams()
+  
+    const supabase = createClient(`https://umnptqfditgysgbpzoyx.supabase.co/`, "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InVtbnB0cWZkaXRneXNnYnB6b3l4Iiwicm9sZSI6ImFub24iLCJpYXQiOjE2ODM4MTA2MjUsImV4cCI6MTk5OTM4NjYyNX0.LExHLdYK2bAdq0ronsaNNl9VDAeMwhTw0SVzB735W5o");
+  
+    useEffect(() => {
+        gettable()
+    }, [id]);
+  
+    async function gettable() {
+        const { data } = await supabase.from("jean").select().eq('id', id);
+        setTable(data);
+        setInitialPrice(data[0].tarif)
+
+    }  
 
     function handleClickAddAdult() {
         setNbAdultes(nbAdultes + 1)
@@ -117,13 +128,14 @@ const ReservationForm = () => {
                         </div>
                     </div>
                     <div className='right-part-reservation-form'>
+                        {table.length > 0 && ( <>
                         <div className="block-container-rf">
                             <div className="h2-rf">Votre commande</div>
                             <div className="card-command">
-                                <img src="https://images.voyageschine.com/allpicture/2017/10/8e4b35512a04424497f403f4.jpg" className='img-command' alt="" />
+                                <img src={table[0].image} className='img-command' alt="" />
                                 <div className="container-text-command">
-                                    <h3 className="title-command">Dynastie Zhou de l'est</h3>
-                                    <p className='text-command' >1700 années de transfert</p>
+                                    <h3 className="title-command">{table[0].titre}</h3>
+                                    <p className='text-command' >{table[0].distance}</p>
                                 </div>
                             </div>
                             <h3 className='block-voyageurs'>Voyageurs</h3>
@@ -188,11 +200,13 @@ const ReservationForm = () => {
                             </div>
                             <button type="submit" className='button-reservation'>Réserver</button>
                         </div>
+                        </> )}
                     </div>
 
                 </div>
 
             </form>
+            
         </div>
     );
 };

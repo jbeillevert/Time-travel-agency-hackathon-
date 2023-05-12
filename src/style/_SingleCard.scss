@@ -54,6 +54,11 @@
             flex-direction: column;
             gap: 4px;
 
+            .iconPriceCard{
+                color: var(--color-bg);
+                transform: translate(5px);
+            }
+
             .apartirde {
                 font-size: 0.8rem;
                 color: gray;
@@ -62,6 +67,8 @@
             .tarif{
                 font-weight: 600;
                 color: #002C39;
+                display:flex;
+                align-items: center;
             }
         }
         .more-info-button {

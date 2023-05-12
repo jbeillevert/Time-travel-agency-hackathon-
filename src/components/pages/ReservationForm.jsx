@@ -3,8 +3,9 @@ import { HiOutlineCalendar } from "react-icons/hi";
 import { AiOutlineMinusCircle } from "react-icons/ai";
 import { AiOutlinePlusCircle } from "react-icons/ai";
 import { createClient } from '@supabase/supabase-js';
-import { useParams } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 import { NavLink } from 'react-router-dom';
+import { ImCross } from "react-icons/im";
 
 
 const ReservationForm = () => {
@@ -89,9 +90,12 @@ const ReservationForm = () => {
 
     }, [nbVoyageursTotal])
 
+    const navigate = useNavigate();
+
 
     return (
         <div className='reservation-form'>
+            <ImCross className="iconCross" onClick={() => navigate(-1)}/>
             <form className='form-rf'>
                 <div className="content-container-rf">
                     <div className='left-part-reservation-form'>

@@ -1,5 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import { RiMoneyEuroCircleFill } from "react-icons/ri";
 
 function SingleCard({ image, titre, tarif, id }) {
     return (
@@ -12,7 +13,8 @@ function SingleCard({ image, titre, tarif, id }) {
                 <div className="achat">
                     <div className='single-card-infos'>
                         <p className="apartirde">À partir de</p>
-                        <p className="tarif">{tarif}</p>
+                        <p className="tarif">{tarif}
+                        <RiMoneyEuroCircleFill  className='iconPriceCard'/></p>
                     </div>
                     <button className="more-info-button">+</button>
                 </div>

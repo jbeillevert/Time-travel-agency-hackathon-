@@ -51,13 +51,14 @@
   .parallelogramme { 
     right: 0;
     display: flex;
-    width: 25%;
+    width: 28%;
     position: absolute;
     height: 105%;
     border-bottom  : 150px solid #293F46;
     border-left : 90px solid transparent;
     animation: slide-in ;
     animation-duration: 0.4s;
+    
     
 
     

@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 import { AiOutlineWarning } from "react-icons/ai";
 import { RiErrorWarningLine } from "react-icons/ri";
+import { ImCross } from "react-icons/im";
 
 function Warning() {
     const [showPopup, setShowPopup] = useState(false);
@@ -13,8 +14,10 @@ function Warning() {
     const popupClose = () => {
         setShowPopup(false);
     };
+    const navigate = useNavigate();
     return (
         <> <div className="warning">
+            <ImCross className="iconCross" onClick={() => navigate(-1)}/>
             <h1 className="warning-title"> <AiOutlineWarning id="icon" />  Avertissement sur le voyage temporel  <AiOutlineWarning id="icon" /></h1>
 
             <div className="disclaimer">

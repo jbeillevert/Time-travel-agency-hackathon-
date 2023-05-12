@@ -22,7 +22,7 @@ function CardDetails() {
   async function gettable() {
       const { data } = await supabase.from("jean").select().eq('id', id);
       setTable(data);
-      console.log(data)
+      
   }
 
   const navigate = useNavigate();

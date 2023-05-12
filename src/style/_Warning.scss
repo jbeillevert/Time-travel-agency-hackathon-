@@ -86,3 +86,17 @@ button {
   font-weight: 500;
   font-size: 1rem;
 }
+
+.iconCross{
+  position: absolute;
+  color: white;
+  right: 3%;
+  top: 4%;
+  scale: 170%;
+  cursor: pointer;
+  transition: all 0.3s;
+      &:hover{
+          scale: 180%;
+          transform: rotate(90deg);
+      }
+}

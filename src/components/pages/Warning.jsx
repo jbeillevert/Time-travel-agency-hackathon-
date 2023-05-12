@@ -7,9 +7,10 @@ import { ImCross } from "react-icons/im";
 function Warning() {
     const [showPopup, setShowPopup] = useState(false);
 
-    const handleClick = () => {
-        setShowPopup(true);
-    };
+     const handleClick = (e) => {
+        e.preventDefault();
+        alert("Votre commande a bien été prise en compte. Nos équipes reviendront vers vous rapidement afin d'entamer le protocole de préparation.")
+    }
 
     const popupClose = () => {
         setShowPopup(false);
@@ -46,19 +47,9 @@ function Warning() {
                 </ol>
             </div >
             <div className="button">
-                {/* <NavLink to=""> */}
-                <button onClick={handleClick}>J'accepte les conditions</button>
-                {/* </NavLink> */}
-
-                {/* {showPopup && (
-                    <div className="popup">
-                        <div className="popup-content">
-                            <h2>Confirmation</h2>
-                            <p>Etes-vous certain d'avoir bien compris les conditions et avertissements ?</p>
-                            <button onClick={popupClose}>Fermer</button>
-                        </div>
-                    </div>
-                )} */}
+                <NavLink to="/confirmation">
+                    <button>J'accepte les conditions</button>
+                </NavLink>
             </div>
         </div>
         </>

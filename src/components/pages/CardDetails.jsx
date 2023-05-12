@@ -5,6 +5,7 @@ import { RiMoneyEuroCircleFill } from "react-icons/ri";
 import { MdAccessTimeFilled } from "react-icons/md";
 import { ImCross } from "react-icons/im";
 
+
 function CardDetails() {
 
   const [table, setTable] = useState({});
@@ -48,6 +49,7 @@ const navigate = useNavigate();
 
         </div>
       </>)}
+
     </div>
   );
 }
